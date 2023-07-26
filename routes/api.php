@@ -20,5 +20,6 @@ use App\Http\Controllers\Api\V1\EmployeeController;
 Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1', 'as' => 'api.'], function(){
     Route::apiResource('employees', EmployeeController::class);
     Route::apiResource('companies', CompanyController::class);
+    Route::get('companies/{company_id}/employees', [CompanyController::class, 'getEmployees']);
 });
 
