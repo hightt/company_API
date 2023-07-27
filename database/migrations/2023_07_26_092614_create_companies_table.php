@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name', 32);
-            $table->integer('nip');
+            $table->string('nip', 10);
             $table->string('address', 128);
             $table->string('city', 64);
             $table->string('zipcode', 16);
