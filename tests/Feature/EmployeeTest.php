@@ -41,7 +41,7 @@ class EmployeeTest extends TestCase
             'email' => 'a.nowak512@gmail.com',
             'phone_number' => '213 536 612'
         ]);
-        $response->assertStatus(200);
+        $response->assertStatus(201);
 
     }
 
